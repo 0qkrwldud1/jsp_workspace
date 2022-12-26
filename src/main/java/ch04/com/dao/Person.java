@@ -2,7 +2,7 @@ package ch04.com.dao;
 
 public class Person {
 	private int id = 20181004;
-	private String name = "이름";
+	private String name = "이름 더미";
 
 	public Person() {
 		

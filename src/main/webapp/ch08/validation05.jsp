@@ -18,7 +18,7 @@
 		var name = form.name.value;
 		var passwd = form.passwd.value;
 		var phone = form.phone1.value + "-" + form.phone2.value + "-" + form.phone3.value;
-		var email = form.email.value;		
+		var email = form.email.value;
 
 		if (!regExpId.test(id)) {
 			alert("아이디는 문자로 시작해 주세요!");

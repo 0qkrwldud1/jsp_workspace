@@ -14,13 +14,13 @@ public class InitParamFilter implements Filter {
 
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
-		System.out.println("Filter02 ÃÊ±âÈ­...");
+		System.out.println("Filter02 ì´ˆê¸°í™”...");
 		this.filterConfig = filterConfig;
 	}
 
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain)	throws IOException, ServletException {
-		System.out.println("Filter02 ¼öÇà...");
+		System.out.println("Filter02 ìˆ˜í–‰...");
 
 		String id = request.getParameter("id");
 		String passwd = request.getParameter("passwd");
@@ -35,9 +35,9 @@ public class InitParamFilter implements Filter {
 		PrintWriter writer = response.getWriter();
 
 		if (id.equals(param1) && passwd.equals(param2))
-			message = "·Î±×ÀÎ ¼º°øÇß½À´Ï´Ù.";
+			message = "ë¡œê·¸ì¸ ì„±ê³µí–ˆìŠµë‹ˆë‹¤.";
 		else
-			message = "·Î±×ÀÎ ½ÇÆĞÇß½À´Ï´Ù.";
+			message = "ë¡œê·¸ì¸ ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.";
 
 		writer.println(message);
 
@@ -46,6 +46,6 @@ public class InitParamFilter implements Filter {
 
 	@Override
 	public void destroy() {
-		System.out.println("Filter02 ÇØÁ¦..");
+		System.out.println("Filter02 í•´ì œ..");
 	}
 }

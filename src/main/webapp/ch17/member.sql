@@ -6,8 +6,8 @@ CREATE TABLE IF NOT EXISTS member(
    name VARCHAR(30),    
    PRIMARY KEY (id)
 );
-INSERT INTO member VALUES('1', '1234', 'È«±æ¼ø');
-INSERT INTO member VALUES('2', '1235', 'È«±æµ¿');
+INSERT INTO member VALUES('1', '1234', 'mem1');
+INSERT INTO member VALUES('2', '1235', 'mem2');
 
 
 select * from member;
